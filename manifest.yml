@@ -1,0 +1,17 @@
+---
+- name: kernel
+  repo: dock0/kernel
+  path: meta/formula
+  version: 3.18-rc3_1
+- name: initrd
+  repo: dock0/initrd
+  path: meta/formula
+  version: 0.0.1
+- name: rootfs
+  repo: dock0/host_rootfs
+  path: meta/formula
+  version: 0.1.0
+- name: config
+  repo: dock0/host_config
+  path: meta/formulae
+  version: 0.0.1
