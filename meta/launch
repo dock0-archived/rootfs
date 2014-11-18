@@ -2,7 +2,7 @@
 
 docker run \
     --rm -t -i \
-    --privileged
+    --privileged \
     -v $SSH_AUTH_SOCK:/auth.sock \
     -e SSH_AUTH_SOCK=/auth.sock \
     -v $(pwd):/opt/vm_root \
