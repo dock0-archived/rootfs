@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker run 
+docker run \
     --rm -t -i \
     -v $SSH_AUTH_SOCK:/auth.sock \
     -e SSH_AUTH_SOCK=/auth.sock \
