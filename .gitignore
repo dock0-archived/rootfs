@@ -1,1 +1,4 @@
 .github
+build_file
+build_file_mount
+root.fs.sfs
