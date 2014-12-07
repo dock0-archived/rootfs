@@ -11,6 +11,6 @@ path = "#{@config['paths']['build']}/root/.ssh/authorized_keys"
 
 FileUtils.mkdir_p File.dirname(path)
 File.open(path, 'wb') do |fh|
-  keys.each { |key| fh.write << key + "\n" }
+  keys.each { |key| fh << key + "\n" }
 end
 
