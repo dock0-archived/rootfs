@@ -14,7 +14,7 @@ container: build_container
 	./meta/launch
 
 build:
-	dock0 config.yaml
+	dock0 image config.yaml
 
 push:
 	@echo $$(sed -r 's/[0-9]+$$//' version)$$(($$(sed -r 's/.*\.//' version) + 1)) > version
