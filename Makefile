@@ -22,7 +22,7 @@ push:
 	ssh -oStrictHostKeyChecking=no git@github.com &>/dev/null || true
 	git tag -f "$$(cat version)"
 	git push --tags origin master
-	targit -a .github -c -f dock0/vm_root $$(cat version) root.fs.sfs
+	targit -a .github -c -f dock0/vm_root $$(cat version) /tmp/root.fs.sfs
 
 local: build push
 
