@@ -1,4 +1,11 @@
 ---
+paths:
+  build_file: /tmp/build_file
+  build: /tmp/build_file_mount
+  package_list: ./packages
+  overlay: ./overlay
+  scripts: ./scripts
+  output: /tmp/root.fs.sfs
 fs:
   size: 4096
   type: btrfs
