@@ -1,6 +1,6 @@
 ---
 paths:
-  build_file: /tmp/build_file
+  build_file: /tmp/root.fs
   build: /tmp/build_file_mount
   package_list: ./packages
   overlay: ./overlay
