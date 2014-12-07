@@ -5,6 +5,6 @@ docker run \
     --privileged \
     -v $SSH_AUTH_SOCK:/auth.sock \
     -e SSH_AUTH_SOCK=/auth.sock \
-    -v $(pwd):/opt/vm_root \
+    -v $(pwd):/opt/build \
     -v ~/.gitconfig:/etc/gitconfig \
     vm_root $1

@@ -1,6 +1,3 @@
-FROM dock0/arch
+FROM dock0/build
 MAINTAINER akerl <me@lesaker.org>
-RUN pacman -S --needed --noconfirm ruby make btrfs-progs arch-install-scripts squashfs-tools openssh
-RUN gem install --no-user-install --no-rdoc --no-ri targit dock0
-WORKDIR /opt/vm_root
-CMD ["make", "local"]
+RUN pacman -S --needed --noconfirm btrfs-progs arch-install-scripts squashfs-tools
