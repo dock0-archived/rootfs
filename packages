@@ -7,6 +7,7 @@ haveged
 lvm2
 nftables
 ntp
+openssh
 pacman
 procps-ng
 syslog-ng
