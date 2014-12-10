@@ -1,1 +1,1 @@
-swap /dev/xvdb /dev/urandom swap,cipher=aes-cbc-essiv:sha256,size=256
+swap /dev/xvdb /dev/urandom swap
