@@ -1,4 +1,5 @@
 btrfs-progs
+cryptsetup
 docker
 e2fsprogs
 git
