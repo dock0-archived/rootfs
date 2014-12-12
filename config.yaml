@@ -14,6 +14,9 @@ docker_url: https://github.com/dock0/docker/releases/download/overlayfs/docker
 keys:
   - https://raw.githubusercontent.com/akerl/keys/master/strong/ender-ed25519
   - https://raw.githubusercontent.com/akerl/keys/master/strong/mazer-ed25519
+versions:
+  s6: 1.1.3.2-2
+  execline: 1.3.1.1-2
 cleanup:
   users:
     - ftp
