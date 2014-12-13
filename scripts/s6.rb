@@ -6,7 +6,7 @@ require 'tempfile'
 
 ['execline', 's6'].each do |package|
   version = @config['versions'][package]
-  url = "https://github.com/akerl/#{package}/releases/dowload/#{version}/#{package}.tar.gz"
+  url = "https://github.com/akerl/#{package}/releases/download/#{version}/#{package}.tar.gz"
   file = Tempfile.new(package)
 
   open(url, 'rb') { |request| file.write request.read }
