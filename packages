@@ -8,6 +8,7 @@ ntp
 openssh
 pacman
 procps-ng
+radvd
 sed
 systemd
 systemd-sysvcompat
