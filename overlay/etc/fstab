@@ -2,4 +2,4 @@
 # /etc/fstab: static file system information
 #
 # <file system> <dir>   <type>  <options>       <dump>  <pass>
-/dev/mapper/luks-docker /var/lib/docker btrfs compress=lzo 0 1
+/dev/mapper/luks-docker /var/lib/docker ext4 defaults 0 1
