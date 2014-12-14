@@ -1,8 +1,10 @@
+bridge-utils
 btrfs-progs
 cryptsetup
 git
 gzip
 haveged
+iproute2
 lvm2
 ntp
 openssh
