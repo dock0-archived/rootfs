@@ -12,5 +12,5 @@ require 'tempfile'
   open(url, 'rb') { |request| file.write request.read }
   file.close
 
-  `tar -xzkv -C #{@config['build']}/ -f #{file.path}`
+  `tar -xzkv -C #{@paths['build']}/ -f #{file.path}`
 end

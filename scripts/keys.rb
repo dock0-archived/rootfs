@@ -7,7 +7,7 @@ require 'open-uri'
 keys = @config['keys'].map do |url|
   open(url, 'rb') { |req| req.read }
 end
-path = "#{@config['paths']['build']}/root/.ssh/authorized_keys"
+path = "#{@paths['build']}/root/.ssh/authorized_keys"
 
 FileUtils.mkdir_p File.dirname(path)
 File.open(path, 'wb') do |fh|

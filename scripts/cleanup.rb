@@ -10,7 +10,7 @@ end
 
 @config['cleanup']['paths'].each do |path|
   puts "Removing path: #{path}"
-  FileUtils.rm_rf "#{@config['paths']['build']}/#{path}"
+  FileUtils.rm_rf "#{@paths['build']}/#{path}"
 end
 
 run_chroot 'pacman -Scc --noconfirm'
