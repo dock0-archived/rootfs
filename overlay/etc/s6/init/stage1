@@ -4,8 +4,6 @@ cd /
 umask 022
 fdclose 0
 
-echo "* init stage 1"
-
 fdclose 1 fdclose 2
 
 # Reopen stdin/stdout/stderr and make them point to the right places
