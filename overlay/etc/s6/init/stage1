@@ -3,13 +3,9 @@
 cd /
 umask 022
 fdclose 0
+fdclose 1
+fdclose 2
 
-foreground { echo "hello world" }
-exec /etc/s6/init/crash
-
-fdclose 1 fdclose 2
-
-# Reopen stdin/stdout/stderr and make them point to the right places
 redirfd -r 0 /dev/null
 mkdir -p /var/s6/
 redirfd -wnb 1 /var/s6/fifo # (black magic: doesn't block)
@@ -19,11 +15,12 @@ background
 {
     s6-setsid
     redirfd -w 1 /var/s6/fifo # (blocks until the logger reads)
-    forbacktickx i { ls /etc/s6/tasks }
-    exec /etc/s6/tasks/${i}
+    forbacktickx i { ls /etc/s6/task }
+    import i
+    exec /etc/s6/task/${i}
 }
 unexport LASTPID
 
 s6-envdir /etc/s6/env
-exec s6-svscan -t0 /etc/s6/service
+s6-svscan -t0 /etc/s6/service
 
