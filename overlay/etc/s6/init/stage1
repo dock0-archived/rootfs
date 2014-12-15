@@ -4,6 +4,9 @@ cd /
 umask 022
 fdclose 0
 
+foreground { echo "hello world" }
+exec /etc/s6/init/crash
+
 fdclose 1 fdclose 2
 
 # Reopen stdin/stdout/stderr and make them point to the right places
@@ -22,6 +25,5 @@ background
 unexport LASTPID
 
 s6-envdir /etc/s6/env
-#exec s6-svscan -t0 /etc/s6/service
-exec /etc/s6/init/crash
+exec s6-svscan -t0 /etc/s6/service
 
