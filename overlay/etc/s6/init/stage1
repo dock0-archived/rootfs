@@ -7,17 +7,17 @@ fdclose 1
 fdclose 2
 
 redirfd -r 0 /dev/null
-mkdir -p /var/s6/
-redirfd -wnb 1 /var/s6/fifo # (black magic: doesn't block)
+foreground { mkdir -p /var/s6/ }
+redirfd -wnb 1 /var/s6/fifo
 fdmove -c 2 1
 
 background
 {
     s6-setsid
-    redirfd -w 1 /var/s6/fifo # (blocks until the logger reads)
+    redirfd -w 1 /var/s6/fifo
     forbacktickx i { ls /etc/s6/task }
     import i
-    exec /etc/s6/task/${i}
+    /etc/s6/task/${i}
 }
 unexport LASTPID
 
