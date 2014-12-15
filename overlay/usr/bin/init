@@ -1,5 +1,4 @@
 #!/usr/bin/execlineb -P
 
-#exec /etc/s6/init/stage1
-exec /etc/s6/init/crash
+exec /etc/s6/init/stage1
 
