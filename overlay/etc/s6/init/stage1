@@ -24,6 +24,6 @@ background
 unexport LASTPID
 
 s6-envdir /etc/s6/env
-#s6-svscan -t0 /etc/s6/service
-/etc/s6/init/crash
+#exec s6-svscan -t0 /etc/s6/service
+exec /etc/s6/init/crash
 
