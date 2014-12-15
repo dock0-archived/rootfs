@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ssh-keygen -A
+exec /usr/bin/sshd -D 2>&1
+
