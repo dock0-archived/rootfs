@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+agetty -L 38400 hvc0
+
