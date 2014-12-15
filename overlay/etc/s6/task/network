@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
-ip link set eth0 up
+find /etc/network -type f -exec bash {} \;
 
