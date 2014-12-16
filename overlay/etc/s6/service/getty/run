@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-echo "root:toor" | chpasswd
-agetty -L 38400 hvc0
+exec agetty -L 38400 hvc0
 

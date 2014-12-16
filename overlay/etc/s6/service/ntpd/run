@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+exec /usr/bin/ntpd -g -u ntp:ntp -n
+

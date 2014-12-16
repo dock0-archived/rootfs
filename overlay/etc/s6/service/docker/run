@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+mkdir -p /var/lib/docker
+mountpoint -q /var/lib/docker/ || mount /dev/mapper/luks-docker /var/lib/docker
+
+exec /usr/local/sbin/docker -d --iptables=false --ip-masq=false -b=docker0 -s overlay
+

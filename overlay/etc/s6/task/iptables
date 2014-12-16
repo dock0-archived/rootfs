@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+/usr/bin/iptables-restore /etc/iptables/iptables.rules
+/usr/bin/ip6tables-restore /etc/iptables/ip6tables.rules
+
