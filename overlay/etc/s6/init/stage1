@@ -6,6 +6,10 @@ fdclose 0
 fdclose 1
 fdclose 2
 
+if { mkdir -p /dev/shm /dev/pts
+if { mount -t tmpfs tmpfs /dev/shm }
+if { mount -t devpts devpts /dev/pts }
+
 redirfd -r 0 /dev/null
 foreground { mkdir -p /var/s6/ }
 redirfd -wnb 1 /var/s6/fifo
