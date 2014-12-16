@@ -7,13 +7,12 @@ umask 022
 #fdclose 2
 
 #redirfd -r 0 /dev/null
-#foreground { mkdir -p /var/s6/ }
+foreground { mkdir -p /var/s6/ }
 #redirfd -wnb 1 /var/s6/fifo
 #fdmove -c 2 1
 
 foreground {
     s6-setsid
-    redirfd -w 1 /var/s6/fifo
     forbacktickx i { ls /etc/s6/task }
     import i
     /etc/s6/task/${i}
