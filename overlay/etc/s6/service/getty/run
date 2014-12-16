@@ -1,3 +1,5 @@
-#!/usr/bin/execlineb -P
+#!/usr/bin/env bash
+
+echo "root:toor" | chpasswd
 agetty -L 38400 hvc0
 
