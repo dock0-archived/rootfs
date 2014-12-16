@@ -1,0 +1,13 @@
+#!/usr/bin/execlineb -P
+
+if { mkdir -p /dev/shm /dev/pts /sys/fs/cgroup }
+if { mount -t tmpfs tmpfs /dev/shm }
+if { mount -t devpts devpts /dev/pts }
+
+if { mount -t tmpfs cgroup /sys/fs/cgroup }
+if {
+    forbacktickx i { pipeline { cut -f1 /proc/cgroups } tail -n+2 }
+    import i
+    foreground { mount -t cgroup -o ${i},,x-mount.mkdir cgroup /sys/fs/cgroup/${i} }
+}
+
