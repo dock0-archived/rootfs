@@ -2,8 +2,11 @@ bridge-utils
 btrfs-progs
 cryptsetup
 git
+grep
 gzip
 haveged
+inetutils
+iputils
 iproute2
 lvm2
 ntp
