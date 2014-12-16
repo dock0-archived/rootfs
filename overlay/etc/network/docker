@@ -3,4 +3,5 @@
 brctl addbr docker0
 ip addr add dev docker0 172.16.0.1/16
 ip -6 addr add dev docker0 fd00::1/64
+ip link set docker0 up
 
