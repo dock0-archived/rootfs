@@ -3,14 +3,21 @@
 
 require 'fileutils'
 
-@config['cleanup']['users'].each do |user|
+cleanup = @config['cleanup']
+
+cleanup['users'].each do |user|
   puts "Removing user: #{user}"
   run_chroot "userdel #{user}"
 end
 
-@config['cleanup']['paths'].each do |path|
+cleanup['paths'].each do |path|
   puts "Removing path: #{path}"
   FileUtils.rm_rf "#{@paths['build']}/#{path}"
+end
+
+cleanup['packages'].each do |package|
+  puts "Removing package: #{package}"
+  run_chroot "pacman -Rdd #{package}"
 end
 
 run_chroot 'pacman -Scc --noconfirm'

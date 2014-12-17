@@ -30,4 +30,6 @@ cleanup:
     - etc/skel/.bash_logout
     - etc/skel/.bash_profile
     - etc/pacman.d/gnupg/pubring.gpg~
+  packages:
+    - systemd
 ...
