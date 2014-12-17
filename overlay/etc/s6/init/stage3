@@ -11,8 +11,8 @@ foreground { sync }
 
 foreground { echo "Sending all processes the TERM signal." }
 foreground { kill -15 -1 }
-foreground { s6-sleep 3 }
-foreground { s6-echo "Sending all processes the KILL signal." }
+foreground { sleep 3 }
+foreground { echo "Sending all processes the KILL signal." }
 foreground { kill -9 -1 }
 
 wait { }
