@@ -17,7 +17,7 @@ end
 
 cleanup['packages'].each do |package|
   puts "Removing package: #{package}"
-  run_chroot "pacman -Rdd #{package}"
+  run_chroot "pacman -Rdd --noconfirm #{package}"
 end
 
 run_chroot 'pacman -Scc --noconfirm'
