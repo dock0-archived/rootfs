@@ -11,7 +11,7 @@ foreground { sync }
 
 foreground { echo "Sending all processes the TERM signal." }
 foreground { kill -15 -1 }
-foreground { sleep 3 }
+foreground { sleep 10 }
 foreground { echo "Sending all processes the KILL signal." }
 foreground { kill -9 -1 }
 
@@ -20,5 +20,5 @@ wait { }
 foreground { echo "Syncing disks." }
 foreground { sync }
 
-foreground { reboot -h }
+foreground { s6-reboot }
 
