@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+find /etc/sysctl.d/ -type f -exec sysctl -p {} \;
+
