@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-exec /usr/bin/radvd --nodaemon --logmethod=stderr
+exec /usr/bin/radvd --nodaemon --logmethod=stderr -u nobody
 
