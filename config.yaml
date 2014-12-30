@@ -6,18 +6,24 @@ paths:
   overlay: ./overlay
   scripts: ./scripts
   output: /tmp/root.fs.sfs
+org: akerl
 fs:
   size: 4096
   type: btrfs
   flags: -f
-docker_url: https://github.com/dock0/docker/releases/download/overlayfs/docker
 keys:
   - https://raw.githubusercontent.com/akerl/keys/master/strong/ender-ed25519
   - https://raw.githubusercontent.com/akerl/keys/master/strong/mazer-ed25519
-versions:
-  s6: 2.0.0.0-3
-  execline: 2.0.0.0-3
-  s6-linux-utils: 2.0.0.0-3
+tarballs:
+  - package: s6
+    version: 2.0.0.0-3
+  - package: execline
+    version: 2.0.0.0-3
+  - package: s6-linux-utils
+    version: 2.0.0.0-3
+  - package: docker
+    org: dock0 
+    version: 1.4.1-dev-3
 cleanup:
   users:
     - ftp
