@@ -12,6 +12,7 @@ require 'tempfile'
 
   file = Tempfile.new(package)
 
+  puts "Downloading #{package}"
   open(url, 'rb') { |request| file.write request.read }
   file.close
 
