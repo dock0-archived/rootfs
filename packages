@@ -6,8 +6,8 @@ grep
 gzip
 haveged
 inetutils
-iputils
 iproute2
+iputils
 lvm2
 ntp
 openssh
@@ -15,3 +15,4 @@ pacman
 procps-ng
 radvd
 sed
+which
