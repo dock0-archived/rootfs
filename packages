@@ -9,7 +9,7 @@ inetutils
 iproute2
 iputils
 lvm2
-ntp
+openntpd
 openssh
 pacman
 procps-ng
