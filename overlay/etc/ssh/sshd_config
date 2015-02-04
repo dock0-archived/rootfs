@@ -2,7 +2,10 @@ Port 22
 #ListenAddress 172.16.0.1
 Protocol 2
 
-UsePrivilegeSeparation yes
+KexAlgorithms curve25519-sha256@libssh.org
+Ciphers chacha20-poly1305@openssh.com
+
+UsePrivilegeSeparation sandbox
 StrictModes yes
 HostBasedAuthentication no
 IgnoreUserKnownHosts yes
