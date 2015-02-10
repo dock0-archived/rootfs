@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ip link set lo up
+
