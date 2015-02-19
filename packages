@@ -8,6 +8,7 @@ haveged
 inetutils
 iproute2
 iputils
+licenses
 lvm2
 openntpd
 openssh
