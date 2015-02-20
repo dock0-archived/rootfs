@@ -1,7 +1,6 @@
 vm_root
 =======
 
-[![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://registry.hub.docker.com/u/dock0/host_builder/)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 A meta-container, designed to build out components of my VMs
