@@ -1,4 +1,4 @@
-dock0/host_builder
+vm_root
 =======
 
 [![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://registry.hub.docker.com/u/dock0/host_builder/)
