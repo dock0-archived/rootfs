@@ -10,4 +10,5 @@ if {
     import i
     foreground { mount -t cgroup -o ${i},,x-mount.mkdir cgroup /sys/fs/cgroup/${i} }
 }
+foreground { echo 1 > /sys/fs/cgroup/memory/memory.use_hierarchy }
 
