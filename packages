@@ -17,7 +17,7 @@ procps-ng
 radvd
 sed
 which
-amylum/docker
-amylum/s6
-amylum/execline
-amylum/s6-linux-utils
+docker-amylum
+s6
+execline
+s6-linux-utils
