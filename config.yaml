@@ -14,16 +14,6 @@ fs:
 keys:
   - https://raw.githubusercontent.com/akerl/keys/master/strong/ender-ed25519
   - https://raw.githubusercontent.com/akerl/keys/master/strong/mazer-ed25519
-tarballs:
-  - package: s6
-    version: 2.1.1.0-10
-  - package: execline
-    version: 2.0.2.1-10
-  - package: s6-linux-utils
-    version: 2.0.0.1-9
-  - package: docker
-    org: dock0
-    version: 1.5.0-9
 cleanup:
   users:
     - ftp
@@ -36,6 +26,4 @@ cleanup:
     - etc/skel/.bash_logout
     - etc/skel/.bash_profile
     - etc/pacman.d/gnupg/pubring.gpg~
-  packages:
-    - systemd
 ...
