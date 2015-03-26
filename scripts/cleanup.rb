@@ -3,19 +3,19 @@
 
 require 'fileutils'
 
-cleanup = @config['cleanup']
+cleanup = @config.fetch(:cleanup, {})
 
-cleanup['users'].each do |user|
+cleanup.fetch(:users, []).each do |user|
   puts "Removing user: #{user}"
   run_chroot "userdel #{user}"
 end
 
-cleanup['paths'].each do |path|
+cleanup.fetch(:paths, []).each do |path|
   puts "Removing path: #{path}"
-  FileUtils.rm_rf "#{@paths['build']}/#{path}"
+  FileUtils.rm_rf "#{@paths[:build]}/#{path}"
 end
 
-cleanup['packages'].each do |package|
+cleanup.fetch(:packages, []).each do |package|
   puts "Removing package: #{package}"
   run_chroot "pacman -Rdd --noconfirm #{package}"
 end
