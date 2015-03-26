@@ -4,7 +4,7 @@
 require 'open-uri'
 require 'tempfile'
 
-@config['tarballs'].each do |tarball|
+@config.fetch('tarballs', []).each do |tarball|
   package = tarball['package']
   version = tarball['version'] || 'latest'
   org = tarball['org'] || @config['org']
