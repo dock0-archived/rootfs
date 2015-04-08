@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker run -ti -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_install
+
