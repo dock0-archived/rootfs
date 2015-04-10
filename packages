@@ -18,8 +18,11 @@ pacman
 procps-ng
 radvd
 sed
+shadow
+util-linux
 which
 docker-amylum
 s6
 execline
 s6-linux-utils
+s6-portable-utils
