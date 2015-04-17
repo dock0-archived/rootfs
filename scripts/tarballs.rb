@@ -4,11 +4,15 @@
 require 'open-uri'
 require 'tempfile'
 
+DEFAULT_URL = 'https://github.com/' \
+  '%{org}/%{package}/' \
+  'releases/download/' \
+  '%{version}/%{package}.tar.gz'
+
 @config.fetch(:tarballs, []).each do |tarball|
-  package = tarball[:package]
-  version = tarball[:version] || 'latest'
-  org = tarball[:org] || @config[:org]
-  url = tarball[:url] || "https://github.com/#{org}/#{package}/releases/download/#{version}/#{package}.tar.gz"
+  tarball[:version] ||= 'latest'
+  tarball[:org] ||= @config[:org]
+  tarball[:url] ||= DEFAULT_URL % tarball
 
   file = Tempfile.new(package)
 
