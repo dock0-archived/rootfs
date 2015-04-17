@@ -4,7 +4,6 @@
 require 'fileutils'
 require 'tmpdir'
 
-
 def list_keys(path)
   Dir.glob("#{path}/**/*").select { |x| File.file? x }
 end
