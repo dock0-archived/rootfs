@@ -12,8 +12,8 @@ fs:
   type: btrfs
   flags: -f
 keys:
-  - https://raw.githubusercontent.com/akerl/keys/master/strong/ender-ed25519
-  - https://raw.githubusercontent.com/akerl/keys/master/strong/mazer-ed25519
+  repo: akerl/keys
+  group: strong
 cleanup:
   users:
     - ftp
