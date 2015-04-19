@@ -14,8 +14,8 @@ end
 
 def fetch_keys
   Dir.mktmpdir('keyrepo') do |dir|
-    `git clone #{@options[:keys][:repo]} #{dir}`
-    group_path = File.join(dir, @options[:keys].fetch(:group, 'default'))
+    `git clone #{@config[:keys][:repo]} #{dir}`
+    group_path = File.join(dir, @config[:keys].fetch(:group, 'default'))
     load_keys(group_path)
   end
 end
