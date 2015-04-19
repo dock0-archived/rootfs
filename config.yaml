@@ -12,7 +12,7 @@ fs:
   type: btrfs
   flags: -f
 keys:
-  repo: akerl/keys
+  repo: git://github.com/akerl/keys
   group: strong
 cleanup:
   users:
