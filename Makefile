@@ -23,7 +23,7 @@ push:
 	git tag -f "$$(cat version)"
 	git push --tags origin master
 	@sleep 3
-	targit -a .github -c -f dock0/vm_root $$(cat version) /tmp/root.fs.sfs
+	targit -a .github,~/.targit.yml -c -f dock0/vm_root $$(cat version) /tmp/root.fs.sfs
 
 local: build push
 
