@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker run -ti -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_install
+docker run -ti -e "BRANCH=${1:-master}" -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_install
 
