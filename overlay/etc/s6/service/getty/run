@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 
-exec agetty -L 38400 hvc0
+if [ "$(cat /sys/hypervisor/type)" == 'xen' ] ; then
+    console=hvc0
+else
+    console=ttyS0
+fi
+
+exec agetty -L 38400 $console
 
