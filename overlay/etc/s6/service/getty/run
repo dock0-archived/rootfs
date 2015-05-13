@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-if [ "$(cat /sys/hypervisor/type)" == 'xen' ] ; then
+if [ -e /sys/hypervisor/type ] ; then
     console=hvc0
 else
     console=ttyS0
