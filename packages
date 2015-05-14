@@ -1,5 +1,5 @@
-libsystemd-amylum
 systemd-amylum
+libsystemd
 bridge-utils
 btrfs-progs
 cryptsetup
