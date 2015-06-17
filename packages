@@ -5,7 +5,6 @@ btrfs-progs
 cryptsetup
 git
 grep
-grub
 gzip
 haveged
 inetutils
