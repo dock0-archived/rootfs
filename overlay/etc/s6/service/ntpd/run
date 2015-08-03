@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+ping -c2 pool.ntp.org || exit
+
 getent group ntp &>/dev/null || groupadd -g 87 ntp
 getent passwd ntp &>/dev/null || useradd -u 87 -g ntp -d /var/lib/ntp -c 'Network Time Protocol' -s /bin/false ntp
 mkdir -p /run/openntpd
