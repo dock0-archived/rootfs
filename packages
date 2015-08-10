@@ -6,7 +6,6 @@ cryptsetup
 git
 grep
 gzip
-haveged
 inetutils
 iproute2
 iputils
@@ -20,7 +19,7 @@ radvd
 sed
 shadow
 util-linux
-which
+which-amylum
 docker-amylum
 s6
 execline
