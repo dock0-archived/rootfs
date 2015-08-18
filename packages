@@ -6,6 +6,7 @@ cryptsetup
 git
 grep
 gzip
+haveged-amylum
 inetutils
 iproute2
 iputils
