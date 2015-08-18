@@ -16,7 +16,7 @@ openssh-amylum
 pacman
 procps-ng-amylum
 radvd-amylum
-sed
+sed-amylum
 shadow
 util-linux
 which-amylum
