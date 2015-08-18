@@ -18,7 +18,7 @@ procps-ng-amylum
 radvd-amylum
 sed-amylum
 shadow
-util-linux
+util-linux-amylum
 which-amylum
 docker-amylum
 s6
