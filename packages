@@ -8,6 +8,7 @@ sed-amylum
 util-linux-amylum
 which-amylum
 docker-amylum
+openntpd-amylum
 s6
 s6-linux-utils
 execline
@@ -24,6 +25,5 @@ iproute2
 iputils
 licenses
 lvm2
-openntpd
 pacman
 shadow
