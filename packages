@@ -9,6 +9,7 @@ util-linux-amylum
 which-amylum
 docker-amylum
 openntpd-amylum
+iptables-amylum
 s6
 s6-linux-utils
 execline
