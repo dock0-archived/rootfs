@@ -14,7 +14,6 @@ s6
 s6-linux-utils
 execline
 s6-portable-utils
-libsystemd
 bridge-utils
 btrfs-progs
 cryptsetup
