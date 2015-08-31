@@ -10,6 +10,7 @@ docker-amylum
 openntpd-amylum
 iptables-amylum
 less-amylum
+findutils-amylum
 filesystem
 s6
 s6-linux-utils
