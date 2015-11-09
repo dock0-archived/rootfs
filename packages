@@ -12,7 +12,7 @@ openntpd-amylum
 iptables-amylum
 less-amylum
 findutils-amylum
-filesystem
+pacman-amylum
 s6
 s6-linux-utils
 execline
@@ -26,7 +26,7 @@ gzip
 inetutils
 iproute2
 iputils
-licenses
 lvm2
-pacman
 shadow
+filesystem
+licenses
