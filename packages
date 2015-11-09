@@ -30,5 +30,6 @@ iproute2
 iputils
 lvm2
 shadow
+coreutils
 filesystem
 licenses
