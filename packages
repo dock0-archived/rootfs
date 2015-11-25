@@ -19,6 +19,7 @@ xz-amylum
 curl-amylum
 gnupg-amylum
 pacman-amylum
+grep-amylum
 s6
 s6-linux-utils
 execline
@@ -26,7 +27,6 @@ s6-portable-utils
 bridge-utils
 btrfs-progs
 cryptsetup
-grep
 gzip
 inetutils
 iproute2
