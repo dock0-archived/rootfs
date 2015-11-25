@@ -1,4 +1,5 @@
 bash-amylum
+git-amylum
 ncurses-amylum
 openssl-amylum
 systemd-amylum
@@ -25,7 +26,6 @@ s6-portable-utils
 bridge-utils
 btrfs-progs
 cryptsetup
-git
 grep
 gzip
 inetutils
