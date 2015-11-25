@@ -1,3 +1,5 @@
+openssl-amylum
+ncurses-amylum
 bash-amylum
 systemd-amylum
 haveged-amylum
@@ -14,6 +16,7 @@ less-amylum
 findutils-amylum
 xz-amylum
 curl-amylum
+gnupg-amylum
 pacman-amylum
 s6
 s6-linux-utils
