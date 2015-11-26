@@ -1,6 +1,7 @@
 bash-amylum
 git-amylum
 ncurses-amylum
+gzip-amylum
 openssl-amylum
 systemd-amylum
 haveged-amylum
