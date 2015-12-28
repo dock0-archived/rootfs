@@ -28,7 +28,6 @@ s6-portable-utils
 bridge-utils
 btrfs-progs
 cryptsetup
-gzip
 inetutils
 iproute2
 iputils
