@@ -36,3 +36,4 @@ shadow
 coreutils
 filesystem
 licenses
+ca-certificates
