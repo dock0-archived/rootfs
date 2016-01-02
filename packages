@@ -16,9 +16,9 @@ openntpd-amylum
 iptables-amylum
 less-amylum
 findutils-amylum
-xz-amylum
+xz
 curl-amylum
-gnupg-amylum
+gnupg
 pacman-amylum
 grep-amylum
 s6
