@@ -37,3 +37,4 @@ coreutils
 filesystem
 licenses
 ca-certificates
+archlinux-keyring
