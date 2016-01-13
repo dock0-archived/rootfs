@@ -5,5 +5,5 @@ mountpoint -q /sys/fs/cgroup/cpu || exit
 mkdir -p /var/lib/docker
 mountpoint -q /var/lib/docker/ || mount /dev/mapper/luks-docker /var/lib/docker
 
-exec /usr/bin/docker -d --iptables=false --ip-masq=false -b=docker0 -s overlay
+exec /usr/bin/docker daemon --iptables=false --ip-masq=false -b=docker0 -s overlay
 
