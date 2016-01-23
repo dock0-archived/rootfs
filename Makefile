@@ -5,7 +5,7 @@ DIR=$(shell pwd)
 default: container
 
 build_container:
-	docker build -t vm_root meta
+	docker build -t rootfs-pkg meta
 
 manual: build_container
 	./meta/launch /bin/bash || true
@@ -23,7 +23,7 @@ push:
 	git tag -f "$$(cat version)"
 	git push --tags origin master
 	@sleep 3
-	targit -a .github,~/.targit.yml -c -f dock0/vm_root $$(cat version) /tmp/root.fs.sfs
+	targit -a .github,~/.targit.yml -c -f dock0/rootfs $$(cat version) /tmp/root.fs.sfs
 
 local: build push
 

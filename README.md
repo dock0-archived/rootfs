@@ -1,4 +1,4 @@
-vm_root
+rootfs
 =======
 
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
