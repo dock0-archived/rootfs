@@ -21,6 +21,7 @@ curl-amylum
 gnupg-amylum
 pacman-amylum
 grep-amylum
+pam-amylum
 slacker
 s6
 s6-linux-utils
