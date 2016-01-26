@@ -21,6 +21,7 @@ curl-amylum
 gnupg-amylum
 pacman-amylum
 grep-amylum
+shadow-amylum
 pam-amylum
 slacker
 s6
@@ -34,7 +35,6 @@ inetutils
 iproute2
 iputils
 lvm2
-shadow
 coreutils
 filesystem
 licenses
