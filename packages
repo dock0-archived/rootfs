@@ -23,6 +23,7 @@ pacman-amylum
 grep-amylum
 shadow-amylum
 pam-amylum
+coreutils-amylum
 slacker
 s6
 s6-linux-utils
