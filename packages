@@ -24,7 +24,6 @@ grep-amylum
 shadow-amylum
 pam-amylum
 coreutils-amylum
-archlinux-keyring-amylum
 iproute2-amylum
 iputils-amylum
 slacker
@@ -42,3 +41,4 @@ lvm2
 filesystem
 licenses
 ca-certificates
+archlinux-keyring
