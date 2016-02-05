@@ -35,8 +35,6 @@ bridge-utils
 btrfs-progs
 cryptsetup
 inetutils
-iproute2
-iputils
 lvm2
 filesystem
 licenses
