@@ -24,6 +24,9 @@ grep-amylum
 shadow-amylum
 pam-amylum
 coreutils-amylum
+archlinux-keyring-amylum
+iproute2-amylum
+iputils-amylum
 slacker
 s6
 s6-linux-utils
@@ -36,8 +39,6 @@ inetutils
 iproute2
 iputils
 lvm2
-coreutils
 filesystem
 licenses
 ca-certificates
-archlinux-keyring
