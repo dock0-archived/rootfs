@@ -22,7 +22,7 @@ gnupg-amylum
 pacman-amylum
 grep-amylum
 shadow-amylum
-pam-amylum
+pam
 coreutils
 iproute2
 iputils
