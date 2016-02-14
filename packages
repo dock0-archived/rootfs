@@ -23,9 +23,9 @@ pacman-amylum
 grep-amylum
 shadow-amylum
 pam-amylum
-coreutils-amylum
-iproute2-amylum
-iputils-amylum
+coreutils
+iproute2
+iputils
 slacker
 s6
 s6-linux-utils
