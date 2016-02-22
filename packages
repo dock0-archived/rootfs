@@ -21,7 +21,7 @@ curl-amylum
 gnupg-amylum
 pacman-amylum
 grep-amylum
-shadow-amylum
+shadow
 pam
 coreutils
 iproute2
