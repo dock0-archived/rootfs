@@ -1,6 +1,6 @@
 bash-amylum
 git-amylum
-ncurses
+ncurses-amylum
 gzip-amylum
 openssl-amylum
 systemd-amylum
@@ -9,7 +9,7 @@ openssh-amylum
 procps-ng-amylum
 radvd-amylum
 sed-amylum
-util-linux
+util-linux-amylum
 which-amylum
 docker-amylum
 openntpd-amylum
