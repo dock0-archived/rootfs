@@ -16,10 +16,10 @@ openntpd-amylum
 iptables-amylum
 less-amylum
 findutils-amylum
-xz
-curl
-gnupg
-pacman
+xz-amylum
+curl-amylum
+gnupg-amylum
+pacman-amylum
 grep
 shadow
 pam
