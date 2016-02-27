@@ -20,7 +20,7 @@ xz-amylum
 curl-amylum
 gnupg-amylum
 pacman-amylum
-grep
+grep-amylum
 shadow
 pam
 coreutils
