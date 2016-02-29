@@ -6,5 +6,6 @@ else
     console=ttyS0
 fi
 
-exec agetty -L 38400 $console
+exec agetty -l /usr/bin/bash -n -L 38400 $console
+#exec agetty -L 38400 $console
 
