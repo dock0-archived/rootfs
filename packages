@@ -27,6 +27,7 @@ coreutils-amylum
 iproute2-amylum
 iputils-amylum
 ca-certificates-mozilla-amylum
+ca-certificates-cacert-amylum
 slacker
 s6
 s6-linux-utils
