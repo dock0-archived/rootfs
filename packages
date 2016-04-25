@@ -26,8 +26,7 @@ pam-amylum
 coreutils-amylum
 iproute2-amylum
 iputils-amylum
-ca-certificates-mozilla-amylum
-ca-certificates-cacert-amylum
+ca-certificates
 slacker
 s6
 s6-linux-utils
