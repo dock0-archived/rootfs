@@ -26,6 +26,7 @@ pam-amylum
 coreutils-amylum
 iproute2-amylum
 iputils-amylum
+musl-amylum
 ca-certificates
 slacker
 s6
