@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+while true; do
+    head -c256 /dev/random > /dev/urandom && break
+    sleep 2
+done
+
