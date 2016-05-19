@@ -4,7 +4,6 @@ ncurses
 gzip-amylum
 openssl-amylum
 systemd-amylum
-haveged-amylum
 openssh-amylum
 procps-ng-amylum
 radvd-amylum
