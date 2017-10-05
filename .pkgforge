@@ -1,0 +1,25 @@
+name 'rootfs'
+org 'dock0'
+
+source(
+  type: 'git',
+  path: '.'
+)
+
+build do
+  run 'dock0 image config.yaml'
+end
+
+package(
+  type: 'file',
+  artifacts: [
+    {
+      source: 'root.fs.sfs',
+      name: 'root.fs.sfs'
+    }
+  ]
+)
+
+test do
+  # TODO: add tests
+end
