@@ -7,7 +7,7 @@ jobs:
     environment:
       - PKGFORGE_STATEFILE: '/tmp/pkgforge'
     steps:
-      - checkout:
+      - checkout
       - run:
           command: git submodule update --init
       - run:
