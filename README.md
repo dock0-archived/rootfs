@@ -1,6 +1,8 @@
 rootfs
 =======
 
+[![Build Status](https://img.shields.io/circleci/project/dock0/rootfs/master.svg)](https://circleci.com/gh/dock0/rootfs)
+[![GitHub release](https://img.shields.io/github/release/dock0/rootfs.svg)](https://github.com/dock0/rootfs/releases)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 A meta-container, designed to build out components of my VMs
