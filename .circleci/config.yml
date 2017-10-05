@@ -7,6 +7,7 @@ jobs:
     environment:
       - PKGFORGE_STATEFILE: '/tmp/pkgforge'
     steps:
+      - checkout:
       - run:
           command: git submodule update --init
       - run:
@@ -30,6 +31,8 @@ workflows:
     jobs:
       - build
       - deploy:
+          requires:
+          - build
           filters:
             tags:
               only: /.*/
