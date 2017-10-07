@@ -35,6 +35,7 @@ s6-portable-utils
 bridge-utils
 btrfs-progs
 cryptsetup
+e2fsprogs
 inetutils
 lvm2
 filesystem
