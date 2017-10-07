@@ -9,7 +9,7 @@ paths:
 org: akerl
 fs:
   size: 4096
-  type: btrfs
+  type: ext4
   flags: -f
 keys:
   repo: git://github.com/akerl/keys
