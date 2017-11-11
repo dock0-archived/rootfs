@@ -3,7 +3,6 @@ git-amylum
 ncurses
 gzip-amylum
 openssl-amylum
-systemd-amylum
 openssh-amylum
 procps-ng-amylum
 radvd-amylum
