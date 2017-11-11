@@ -17,6 +17,7 @@ less-amylum
 findutils-amylum
 xz-amylum
 curl-amylum
+libgpg-error-amylum
 gnupg-amylum
 pacman-amylum
 grep-amylum
