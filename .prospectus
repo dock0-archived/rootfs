@@ -3,5 +3,5 @@ Prospectus.extra_dep('file', 'prospectus_circleci')
 item do
   noop
 
-  extend ProspectusCircleci::Build.new('dock0/rootfs')
+  #extend ProspectusCircleci::Build.new('dock0/rootfs')
 end
