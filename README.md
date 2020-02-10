@@ -1,9 +1,9 @@
 rootfs
 =======
 
-[![Build Status](https://img.shields.io/travis/com/dock0/rootfs.svg)](https://travis-ci.com/dock0/rootfs)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dock0/rootfs/Build)](https://github.com/dock0/rootfs/actions))
 [![GitHub release](https://img.shields.io/github/release/dock0/rootfs.svg)](https://github.com/dock0/rootfs/releases)
-[![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+[![License](https://img.shields.io/github/license/dock0/rootfs)](https://github.com/dock0/rootfs/blob/master/LICENSE)
 
 A meta-container, designed to build out components of my VMs
 

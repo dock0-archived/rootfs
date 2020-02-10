@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker run -ti -e "BRANCH=${1:-master}" -v /dev/sda:/opt/device -v /run/vm/bootmnt:/run/vm/bootmnt dock0/vm_spec
+docker run -ti -e "BRANCH=${1:-master}" -v /dev/sda:/opt/device -v /run/vm/bootmnt:/run/vm/bootmnt docker.pkg.github.com/dock0/vm_spec/vm_spec
 

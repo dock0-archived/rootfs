@@ -7,7 +7,6 @@ source(
 )
 
 build do
-  run 'mkdir -p /run/shm'
   run 'dock0 image config.yaml'
   run "mv /tmp/root.fs.sfs #{releasedir}/root.fs.sfs"
 end

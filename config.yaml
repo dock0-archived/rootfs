@@ -10,8 +10,7 @@ org: akerl
 fs:
   size: 4096
 keys:
-  repo: git://github.com/akerl/keys
-  group: strong
+  url: https://id-ed25519.pub/groups/strong.txt
 cleanup:
   users:
     - ftp
@@ -19,7 +18,6 @@ cleanup:
   paths:
     - srv/ftp
     - srv/http
-    - etc/systemd/system/getty.target.wants/getty@tty1.service
     - etc/skel/.bashrc
     - etc/skel/.bash_logout
     - etc/skel/.bash_profile

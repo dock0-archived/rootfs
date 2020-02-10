@@ -1,28 +1,10 @@
 ##
 # Add SSH keys
 
+require 'open-uri'
 require 'fileutils'
-require 'tmpdir'
-
-def list_keys(path)
-  Dir.glob("#{path}/**/*").select { |x| File.file? x }
-end
-
-def load_keys(path)
-  list_keys(path).map { |x| File.readlines x }.flatten.uniq
-end
-
-def fetch_keys
-  Dir.mktmpdir('keyrepo') do |dir|
-    `git clone #{@config[:keys][:repo]} #{dir}`
-    group_path = File.join(dir, @config[:keys].fetch(:group, 'default'))
-    load_keys(group_path)
-  end
-end
 
 path = "#{@paths[:build]}/root/.ssh/authorized_keys"
+keys = open(@config[:keys][:url]).read
 
-FileUtils.mkdir_p File.dirname(path)
-File.open(path, 'wb') do |fh|
-  fetch_keys.each { |key| fh << key + "\n" }
-end
+File.open(path, 'w') { |fh| fh << keys }
