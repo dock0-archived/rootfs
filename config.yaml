@@ -12,10 +12,7 @@ fs:
 keys:
   url: https://id-ed25519.pub/groups/strong.txt
 cleanup:
-  users:
-    - http
   paths:
-    - srv/http
     - etc/skel/.bashrc
     - etc/skel/.bash_logout
     - etc/skel/.bash_profile
