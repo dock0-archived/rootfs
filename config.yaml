@@ -13,10 +13,8 @@ keys:
   url: https://id-ed25519.pub/groups/strong.txt
 cleanup:
   users:
-    - ftp
     - http
   paths:
-    - srv/ftp
     - srv/http
     - etc/skel/.bashrc
     - etc/skel/.bash_logout
